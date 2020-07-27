@@ -50,6 +50,35 @@ console.log(parisId);
 console.log(nycId);
 console.log(otherCitiesId.length);
 
+//Classe
+class Trip {
+    constructor(id, name, imageUrl) {
+    this.id = id;
+    this.name = name;
+    this.imageUrl = imageUrl;
+    }
+
+    get price() {
+        return this._price;
+    }
+
+    set price(_price) {
+        this._price = _price
+    }
+
+    toString(){
+        console.log("Trip [" + this.id + ", " + this.name + ", " + this.imageUrl + ", " + this._price + "]");
+    }
+
+    }
+
+let parisTrip = new Trip("paris", "Paris", "img/paris.jpg");
+parisTrip._price = 100;
+
+console.log(parisTrip);
+console.log(parisTrip.name);
+
+parisTrip.toString();
 
 
 

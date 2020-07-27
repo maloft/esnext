@@ -45,7 +45,10 @@ console.log(city);
 console.log(temperature);
 
 //Rest operator
-
+let [parisId, nycId, ...otherCitiesId] = citiesId;
+console.log(parisId); 
+console.log(nycId);
+console.log(otherCitiesId.length);
 
 
 
